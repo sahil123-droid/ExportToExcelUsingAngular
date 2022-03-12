@@ -1,0 +1,21 @@
+<div class="p-1 border border-dark">
+  <table class="table table-dark" id="excel-table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let each of users">
+        <th scope="row">{{ each.Id }}</th>
+        <td>{{ each.Name }}</td>
+        <td>{{ each.LastName }}</td>
+        <td>{{ each.Email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-dark" (click)="exportexcel()">Export Data</button>
+</div>
